@@ -37,7 +37,7 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-8 text-lg">
-          {['Home', 'About', 'Projects', 'Contact'].map((link, index) => (
+          {['Home',  'Projects', 'Contact Us','About'].map((link, index) => (
             <motion.a 
               key={index}
               href={`#${link.toLowerCase()}`}
@@ -69,7 +69,7 @@ export default function Header() {
           transition={{ duration: 0.5 }}
           className="lg:hidden bg-[#15172b] mt-4 py-4 px-6 space-y-4"
         >
-          {['Home', 'About', 'Projects', 'Contact'].map((link, index) => (
+          {['Home',  'Projects', 'Contact Us','About'].map((link, index) => (
             <motion.a
               key={index}
               href={`#${link.toLowerCase()}`}
@@ -91,17 +91,17 @@ export default function Header() {
        
             👋
    
-          Hi, Iam <span className="text-teal-400">Sam Zarila</span>
+          Hi, we are <span className="text-teal-400">TechNest</span>
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-2xl">
-          Iam a creative developer focused on building engaging web experiences and delivering solutions that make a difference.
+          We are creative developers focused on building engaging web experiences and delivering solutions that make a difference.
         </p>
         <div className="mt-6 flex space-x-4">
           <a
             href="#projects"
             className="px-6 py-3 text-lg font-semibold text-gray-900 bg-teal-400 rounded-full shadow-lg hover:bg-teal-300 transition duration-300"
           >
-            View My Work
+            View our Work
           </a>
           <a
             href="#contact"
@@ -131,7 +131,7 @@ export default function Header() {
           transition={{ duration: 0.6 }}
         >
           <Image
-            src={senior} // Replace with your image
+            src={""} // Replace with your image
             alt="Profile"
             width={300}
             height={300}
@@ -143,9 +143,9 @@ export default function Header() {
       
       </div>
     </section>
-          <h2 className="text-4xl font-bold  text-yellow-400 text-left">Know About Me</h2>
+          <h2 className="text-4xl font-bold  text-yellow-400 text-left">Know About Us</h2>
           <p className=" text-lg text-gray-400 text-left max-w-lg">
-            I am a passionate software developer with extensive experience in full-stack web and mobile app development. I have expertise in creating seamless user experiences through robust front-end technologies and efficient back-end systems. With a strong focus on delivering quality and scalable solutions, I aim to provide clients with applications that meet their needs and exceed expectations.
+            we are passionate software developers with extensive experience in full-stack web and mobile app development. we have expertise in creating seamless user experiences through robust front-end technologies and efficient back-end systems. With a strong focus on delivering quality and scalable solutions, we aim to provide clients with applications that meet their needs and exceed expectations.
           </p>
         </motion.div>
 
@@ -158,18 +158,35 @@ export default function Header() {
         >
           {/** Skills List **/}
           {[
-            {
-              title: 'Software Development',
-              description: 'Expert in modern frameworks like React, Next.js, and NestJS. I develop scalable and efficient code that enhances application performance.',
-            },
-            {
-              title: 'Mobile App Development',
-              description: 'Proficient in building mobile applications using Flutter and React Native with a focus on performance and smooth user interactions.',
-            },
-            {
-              title: 'UI/UX Design',
-              description: 'Experienced in designing user interfaces using Figma and Adobe XD to ensure intuitive and engaging user experiences.',
-            },
+           {
+            title: "Software Development",
+            description: "Expert in modern frameworks like React, Next.js, and NestJS.We develop scalable and efficient code that enhances application performance."
+          },
+
+          {
+            title: "Mobile App Development",
+            description: "Proficient in building mobile applications using Flutter and React Native with a focus on performance and smooth user interactions."
+          },
+
+          {
+            title: "Information Systems",
+            description: "Specialized in designing and managing large-scale information systems to support organizational operations and data-driven decision-making."
+          },
+
+          {
+            title: "Artificial Intelligence & Machine Learning",
+            description: "Proficient in developing and deploying AI-driven solutions using neural networks, natural language processing, and computer vision. Experienced with machine learning frameworks like TensorFlow and Scikit-learn to build real-world applications that solve complex problems and enhance automation."
+          },
+         
+
+
+          {
+            title: "Data Analysis & Power BI Visualization",
+            description: "Experienced in building interactive dashboards and data visualizations using Microsoft Power BI. Skilled at transforming complex data into clear, actionable insights for stakeholders and improving decision-making processes."
+          }
+          ,
+
+            
           ].map((skill, index) => (
             <motion.div
               key={index}

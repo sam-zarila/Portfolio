@@ -31,7 +31,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-8 text-lg">
-          {['Home', 'About', 'Projects', 'Contact'].map((link, index) => (
+          {['Home',  'Projects', 'Contact Us','About'].map((link, index) => (
             <motion.a 
               key={index}
               href={`#${link.toLowerCase()}`}
@@ -63,7 +63,7 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           className="lg:hidden bg-[#15172b] mt-4 py-4 px-6 space-y-4"
         >
-          {['Home', 'About', 'Projects', 'Contact'].map((link, index) => (
+          {['Home',  'Projects', 'Contact Us','About'].map((link, index) => (
             <motion.a
               key={index}
               href={`#${link.toLowerCase()}`}
