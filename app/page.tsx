@@ -153,8 +153,8 @@ export default function Home() {
       <h3 className="text-2xl font-bold text-yellow-400">Mobile App Development</h3>
       <p className="text-gray-400 mt-2">Creating user-friendly mobile appsa for IOS and Android.</p>
     </div>
-    <h3 className="text-2xl font-bold text-yellow-400">Database Management Systems</h3>
-      <p className="text-gray-400 mt-2">Building responsive websites using the latest technologies.</p>
+    {/* <h3 className="text-2xl font-bold text-yellow-400">Database Management Systems</h3> */}
+      {/* <p className="text-gray-400 mt-2">Building responsive websites using the latest technologies.</p> */}
     </div>
 
     <div className="bg-[#0d0e15] py-10 px-5 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300">
